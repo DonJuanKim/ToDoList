@@ -1,0 +1,88 @@
+:root {
+  /* Color */
+  --white-color: rgb(255,255,255);
+  --black-color: rgb(20,10,0);
+  --blue-grey-color: #455a64;
+  --dark-blue-grey-color: #1c313a;
+  --light-blue-grey-color: #718792;
+
+  /* Size */
+  --padding: 12px;
+
+  /* Font Size */
+  --font-large: 25px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+};
+
+
+.toDo {
+  display: flex;
+}
+
+* {
+
+  font-family: 'Roboto';
+  padding: 10px;
+  margin:0;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: var(--font-large);
+  display: flex;
+  justify-content: center;
+}
+
+.inputBox {
+  padding-bottom: 20px;
+  height: 6vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#myInput {
+  display: flex;
+  width: 60vw;
+}
+
+#addBtn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+}
+#clearBtn{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+}
+
+.removeBtn {
+  display: block;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  background-color: var(--dark-blue-grey-color);
+  height : 100%;
+  padding: 20px;
+}
+
+.task {
+  display: flex;
+  font-size: var(--font-medium);
+  color: var(--white-color);
+  position: relative;
+  list-style: none;
+  justify-content: space-between;
+}
