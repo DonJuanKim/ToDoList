@@ -6,6 +6,7 @@ const removeBtn = document.getElementById('removeBtn');
 // Task adding click event in the to-do list 
 
 addBtn.addEventListener('click', () => {
+  
   // Add li to ul 
   let li = document.createElement('li');
   li.className = 'task'
@@ -22,6 +23,7 @@ addBtn.addEventListener('click', () => {
   ul.appendChild(li);
   li.appendChild(removeBtn);
 
+  // removing a task from the list
   removeBtn.addEventListener('click', () => {
     li.innerHTML = "";
   });
@@ -30,11 +32,10 @@ addBtn.addEventListener('click', () => {
 
 
 // Clearing content click event 
-
 clearBtn.addEventListener('click', () => {
   ul.innerHTML = "";
 });
 
 
-// removing a task from the list
+
 
